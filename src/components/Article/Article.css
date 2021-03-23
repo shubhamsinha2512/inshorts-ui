@@ -1,7 +1,11 @@
-/* @keyframes fadeIn{
+@keyframes fadeIn{
     0% {opacity: 0;}
     100% {opacity: 100%;}
-} */
+}
+
+.fadeInAnimation{
+    animation: 1s ease-out 0s 1 fadeIn;
+  }
 
 .article {
     max-width: 100vw;

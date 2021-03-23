@@ -3,8 +3,9 @@ import './Article.css'
 
 function Article({article}) {
 
+
     return (
-        <div className='article'>
+        <div id='art' className='article'>
             <img className='articleImg' src={article.image} alt='article' />
             <div className='articleMain'>
                 <h4 className='articleHeading'>

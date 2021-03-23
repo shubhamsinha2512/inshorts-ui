@@ -1,8 +1,7 @@
 import './App.css';
 import Article from './components/Article/Article'
-import { Container } from 'react-bootstrap'
 
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 function App() {
   
@@ -57,6 +56,21 @@ function App() {
       }
     }
   }
+
+  
+  function animTrigger(){
+    var articleComp = document.getElementById('art');
+
+    articleComp.classList.remove('fadeInAnimation');
+    articleComp.classList.add('fadeInAnimation');
+}
+
+  useEffect(()=> alert('View in mobile device | Swipe up to scroll articles'), [])
+
+  useEffect(()=>{
+    animTrigger();
+  }, [currentArticle])
+  
 
   return (
       <div className="App" 
